@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+<meta name="author" content="Health & Gym Website">
+<meta name="keywords" content="Health, Fitness, Gym, Muscle, Protein, Water, Healthy Eating, Workout">
+<meta property="og:title" content="Health & Gym Mastery">
+<meta property="og:description" content="All-in-one guide to staying healthy, eating right, working out smart, and building muscle.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/cover.jpg">
+
+<!-- Figma / Framer inspired design uses Bootstrap for layout, Framer transitions via JS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <meta name="description" content="Muscle building strategies, techniques, and foods.">
+  <title>Muscle Building</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Muscle Building</h1>
+  </header>
+  <div class="text-center my-4">
+  <img src="images-muscle-growth.jfif" alt="Muscle Growth" class="img-fluid rounded shadow">
+</div>
+  <main>
+    <section>
+      <h2>Best Practices</h2>
+      <p>Compound exercises, progressive overload, sufficient rest, and nutrition are key to muscle growth.</p>
+    </section>
+    <section>
+      <h2>Diet Tips</h2>
+      <ul>
+        <li>High protein intake</li>
+        <li>Healthy fats and complex carbs</li>
+        <li>Post-workout nutrition</li>
+      </ul>
+    </section>
+  </main>
+  <script>
+  // Smooth scroll for internal links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  // Framer-inspired fade-in animation
+  window.addEventListener('scroll', () => {
+    document.querySelectorAll('.reveal').forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        el.classList.add('visible');
+      }
+    });
+  });
+</script>
+<div class="text-center my-4">
+  <a href="workout-effects.html" class="btn btn-lg btn-primary">Next: Workout Effects</a>
+</div>
+
+</body>
+</html>
